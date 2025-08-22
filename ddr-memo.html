@@ -33,6 +33,38 @@
             border-radius: 5px;
             border-left: 3px solid #007bff;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th:nth-child(1), td:nth-child(1) {
+            width: 20%;
+        }
+        th:nth-child(2), td:nth-child(2) {
+            width: 60%;
+        }
+        th:nth-child(3), td:nth-child(3) {
+            width: 20%;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
     </style>
 </head>
 
@@ -47,9 +79,22 @@
 
     <div class="memo-section">
         <h2>判定位置メモ</h2>
-        <div class="memo-item">
-            <h3>判定位置について</h3>
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>バージョン</th>
+                    <th>曲名</th>
+                    <th>判定位置(ms)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>X3 vs 2nd mix</td>
+                    <td>I/O</td>
+                    <td>+10</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 
